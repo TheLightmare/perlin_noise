@@ -30,10 +30,12 @@ def circle_gradient(w, h):
     center_y  = h // 2
     circle_grad = np.zeros((h, w))
 
+    offset = 100
+
     for y in range(h):
         for x in range(w):
-            distx = abs(x - center_x)
-            disty = abs(y - center_y)
+            distx = abs(x - center_x) - offset
+            disty = abs(y - center_y) - offset
             dist = math.sqrt(distx * distx + disty * disty)
             circle_grad[y][x] = dist * 0.5
 
