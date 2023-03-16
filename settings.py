@@ -1,0 +1,8 @@
+WIDTH = 1000
+HEIGHT = 1000
+TILESIZE = 32
+DETAIL_LEVEL = 10
+ZOOM = 10
+
+
+LOOKUP_IMAGE = "biome-lookup-discrete.png"
